@@ -1,0 +1,455 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\firebasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\firebasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\insightspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\insightspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\insightspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\insightspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\chartdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\chartdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\scorechartdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\scorechartdrawable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\wellifyapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\wellifyapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\recordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\recordpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\wellnessrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\wellnessrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\dailypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\dailypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\resources\\appicon\\appiconfg.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\resources\\appicon\\appiconfg.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\edlee\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.60\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\dailypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\dailypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\recordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\recordpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\calendarday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\calendarday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\platforms\\android\\resources\\values\\colors.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\platforms\\android\\resources\\values\\colors.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\exercisepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\exercisepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\waterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\waterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|c:\\users\\edlee\\source\\repos\\wellifyapp\\wellifyapp\\sleeppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1E5AE0A0-BA85-1009-8F9F-8F2EEC6B8800}|WellifyApp\\WellifyApp.csproj|solutionrelative:wellifyapp\\sleeppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 310,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChartDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\ChartDrawable.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\ChartDrawable.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\ChartDrawable.cs",
+              "RelativeToolTip": "WellifyApp\\ChartDrawable.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T06:36:38.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\MainPage.xaml.cs",
+              "RelativeToolTip": "WellifyApp\\MainPage.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAA1wAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T03:44:32.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FirebaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\FirebaseHelper.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\FirebaseHelper.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\FirebaseHelper.cs",
+              "RelativeToolTip": "WellifyApp\\FirebaseHelper.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwFoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T00:34:48.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AiService.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\AiService.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\AiService.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\AiService.cs",
+              "RelativeToolTip": "WellifyApp\\AiService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T09:37:37.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScoreChartDrawable.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\ScoreChartDrawable.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\ScoreChartDrawable.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\ScoreChartDrawable.cs",
+              "RelativeToolTip": "WellifyApp\\ScoreChartDrawable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T04:42:06.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InsightsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\InsightsPage.xaml.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\InsightsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\InsightsPage.xaml.cs",
+              "RelativeToolTip": "WellifyApp\\InsightsPage.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAvwCgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T22:18:49.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InsightsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\InsightsPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\InsightsPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\InsightsPage.xaml",
+              "RelativeToolTip": "WellifyApp\\InsightsPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T22:18:47.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RecordPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\RecordPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\RecordPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\RecordPage.xaml",
+              "RelativeToolTip": "WellifyApp\\RecordPage.xaml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAiwD4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T10:33:29.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\App.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\App.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\App.xaml",
+              "RelativeToolTip": "WellifyApp\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-05T01:36:24.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WellnessRecord.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\WellnessRecord.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\WellnessRecord.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\WellnessRecord.cs",
+              "RelativeToolTip": "WellifyApp\\WellnessRecord.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T00:35:39.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RecordPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\RecordPage.xaml.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\RecordPage.xaml.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\RecordPage.xaml.cs",
+              "RelativeToolTip": "WellifyApp\\RecordPage.xaml.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAADwv5UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:35:17.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WellifyApp.csproj",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\WellifyApp.csproj",
+              "RelativeDocumentMoniker": "WellifyApp\\WellifyApp.csproj",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\WellifyApp.csproj",
+              "RelativeToolTip": "WellifyApp\\WellifyApp.csproj",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-29T23:23:55.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DailyPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\DailyPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\DailyPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\DailyPage.xaml",
+              "RelativeToolTip": "WellifyApp\\DailyPage.xaml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T04:19:09.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\App.xaml.cs",
+              "RelativeToolTip": "WellifyApp\\App.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T01:36:27.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AboutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\AboutPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\AboutPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\AboutPage.xaml",
+              "RelativeToolTip": "WellifyApp\\AboutPage.xaml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T23:25:42.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DailyPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\DailyPage.xaml.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\DailyPage.xaml.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\DailyPage.xaml.cs",
+              "RelativeToolTip": "WellifyApp\\DailyPage.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwCwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T20:29:03.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Microsoft.Maui.Resizetizer.After.targets",
+              "DocumentMoniker": "C:\\Users\\edlee\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.60\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.60\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ToolTip": "C:\\Users\\edlee\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.60\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\10.0.60\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "ViewState": "AgIAAHQCAAAAAAAAAADwv3gCAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-30T21:33:41.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\MainPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\MainPage.xaml",
+              "RelativeToolTip": "WellifyApp\\MainPage.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T23:23:39.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appiconfg.svg",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Resources\\AppIcon\\appiconfg.svg",
+              "RelativeDocumentMoniker": "WellifyApp\\Resources\\AppIcon\\appiconfg.svg",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Resources\\AppIcon\\appiconfg.svg",
+              "RelativeToolTip": "WellifyApp\\Resources\\AppIcon\\appiconfg.svg",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATvSURBVEhLtZZrbFRFFMd/d193724ppYUt2NKHtCAPoYCAgiAIKiRKAMGGgJpoKIJfRIh\u002BMX4RY0KsIESIWBLU4gdqVURJNCiIiYQIbWmxIFCQllcLTbul3b37uHP8cLfbhaIhMZ5k7kwmM//fmTMzZy78nyYi2p19ANXV1duBNdhj6K3vbKeUHStWrFh7u8q/WHV1tdyr1dbWSlVVlezZs2f7nToAjjs7Uq3XQyWCUoIohRKFUgqlLCzL4sKFCyxduhSl1JqKiop\u002BkLsCkqEAQlELK1hL7PonWJcnYNYMpvtng9BvYxDzUnJsaWkplmWt2bp1622QfnuQvvoL1/opvlh86Ciwmpk3fC9j0k5iXD\u002BPisZxBl5COcbhcJpE/tzGwei7LFu2jFgsRiQSYdeuXfj9/h2rVq1a2w8w9PWvC4dkDqwoKRz8\u002BJOTspmZuYn7Yrvo/NXJUVlCI3NIHzaFl2cU4HJo3Pg0m9OFVbS0tBCJRIhGoxQUFHD16lXKyso0AFef\u002BDf5gYy0/U/MGlc8vyjINH0FaZ0HuXRsNvVj36bB9RDnW7u5\u002BMdlrnV08/YzY/EMn8/kyZMoKCggbIYxvAbZ2dlUVlYmnXaQCEtWxoDd82Y9OLL0gRbPLH0JaWcPcmz/LDZa77PneAZtLZ3kBdIZPb6QuqCDd75txF38AobPR25uLsUjisnJycHn8yX3JQnIyhr49Oj8QNGCojZXiWMl7voGTtYtILD8Oz5eXkL5omImpFm0NjaT7nEzJGcItW1hmhyTQAQQRFNJ0X6AAT7XosWTXZmPGGWaq\u002Bk0J2unU/LKAfKzfAAMS/fy4rRcOjpvMdDhxuFy4vL7\u002BLLmalII0RIwUKoP5gLIG6RPmZm12fB1HeX0pefZlLWOjo\u002BOEbOslNuqMHx\u002BTCcYbifidnPqyk0QQbC1e09M6gpcAKunHc/LVZ9rLQcncnj6e4z3BuxJ2B9bwAZZEQurB2JKYcUtFKAJaNigfgDpGTOzp2ObETyky74Z\u002B7UO52D55cAJTcVjtncCQiIPiaCUQhA0hIcLM9HEjk6vI/0BodaFzmvtzn3WumibleGJRq1brmhP\u002Bg\u002BvzyUWj9kC9jQk4a0NtEMiCWUbagfptk2WrvZHg2f0rh\u002BtpTfONbcLSvyB/PvY8FUjp64EiSuhJxqn8VoXr\u002B2tZ86WI8z\u002B4AhzPzxCVe2VpKCG1pdiUlcQatHGeAaqytq64DhPO4MG\u002BLy\u002BnKI8Il3dbDx0iRs3ghgeJ\u002BnpaRSOKmbKSAdtN7u41dTE4gnDEsuzxe8aImViZS6MvZq3vjugm/GfTtWpwpwR\u002Bf7sIQMoLBnN/YnTF41btNwMEmxtJ97RzuZnJ\u002BB0aH2B/wdzaA6\u002Bb/uMN5vLn2sbTv1TWueZmusNdZyuOcPvNWc50fAXp\u002BrP09RwjuDFZgbFeviotISigD95AJKU3ip1DzSXvKG5mX95C7I7460jlb6yA1ON1sMzcvxkhm/hvnmd4WIyNcvF\u002BsfyqVg5kbxMOx3climlD5QKuKtVVFQcFxGJREwxI6aYpimmGRYzHBYzHBIzHJZwOCThUEjC4R4JpdQiIuXl5UnCPz04kwE8Hh3do6PrOrruRfd60b0GuteL12vgNQy8Xh9GSp2Yn9Tq9\u002BAA7Ny5c7uIrOm9vUop\u002B5TcpZAQTG0DOzZs2HDvPwH/xf4Gb5LkTqfRE7EAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-04-30T21:35:50.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CalendarDay.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\CalendarDay.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\CalendarDay.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\CalendarDay.cs",
+              "RelativeToolTip": "WellifyApp\\CalendarDay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T10:34:54.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeDocumentMoniker": "WellifyApp\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Platforms\\Android\\MainActivity.cs",
+              "RelativeToolTip": "WellifyApp\\Platforms\\Android\\MainActivity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T20:03:02.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Resources\\Styles\\Colors.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Resources\\Styles\\Colors.xaml",
+              "RelativeToolTip": "WellifyApp\\Resources\\Styles\\Colors.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-30T09:29:45.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ExercisePage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\ExercisePage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\ExercisePage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\ExercisePage.xaml",
+              "RelativeToolTip": "WellifyApp\\ExercisePage.xaml",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAYwEAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T04:12:03.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "colors.xml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "RelativeDocumentMoniker": "WellifyApp\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "RelativeToolTip": "WellifyApp\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-04-30T09:29:58.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WaterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\WaterPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\WaterPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\WaterPage.xaml",
+              "RelativeToolTip": "WellifyApp\\WaterPage.xaml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwFEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T04:11:59.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SleepPage.xaml",
+              "DocumentMoniker": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\SleepPage.xaml",
+              "RelativeDocumentMoniker": "WellifyApp\\SleepPage.xaml",
+              "ToolTip": "C:\\Users\\edlee\\source\\repos\\WellifyApp\\WellifyApp\\SleepPage.xaml",
+              "RelativeToolTip": "WellifyApp\\SleepPage.xaml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwE0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T04:11:39.961Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="WellifyApp.MealPage" 
+             Title="MealPage" 
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*">
+        <Grid Grid.Row="0"
+      BackgroundColor="#2e748f"
+      Padding="7"
+      ColumnDefinitions="Auto,*,Auto">
+
+            <!-- Back Arrow -->
+            <Label Grid.Column="0"
+           Text="‹"
+           FontSize="43"
+           FontAttributes="Bold"
+           TextColor="White"
+           VerticalOptions="Center"
+           HorizontalOptions="Start"
+           Margin="15,0,0,0"
+            Padding="0,-9,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBackTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!--  Title -->
+            <Label Grid.Column="1"
+           Text="Daily Entry"
+            Padding="-28,0,0,0"
+           FontFamily="introrust"
+             CharacterSpacing="1.5"
+             FontSize="20"
+           FontAttributes="Bold"
+           TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+        </Grid>
+        <!-- CONTENT AREA -->
+        <VerticalStackLayout Grid.Row="1"
+                             BackgroundColor="#fffcf3"
+                             Padding="50,20" Spacing="15">
+
+            <Label x:Name="DateLabel"
+               FontSize="22"
+                FontFamily="etna"
+            CharacterSpacing="1"
+               Padding="0,20"
+               HorizontalOptions="Center"/>
+
+            <Label Text="MEAL QUALITY"
+                FontSize="30"
+                FontAttributes="Bold"
+                   FontFamily="introrust"
+                TextColor="#af006b"
+                HorizontalOptions="Center"
+                Margin="0,13,0,0"
+                VerticalOptions="Center"
+                CharacterSpacing="1.5"/>
+
+            <Label Text="Make sure you eat on time!"
+                FontSize="17"
+                FontAttributes="Bold"
+                   FontFamily="rotisb"
+                   Padding="0,25,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                CharacterSpacing="1.5"/>
+
+            <Label Text="🍽"
+                   FontSize="110"
+                   HorizontalOptions="Center"
+                   Padding="0,0,0,0"/>
+
+            <VerticalStackLayout Spacing="12" Margin="0,10">
+
+                <!-- Healthy -->
+                <Border x:Name="HealthyCard"
+                    Stroke="Gray"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 12"
+                    Padding="15">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnMealCardTapped"/>
+                    </Border.GestureRecognizers>
+
+                    <Label Text="Mostly Healthy Meals"
+                            FontFamily="rotisb"
+                            CharacterSpacing="1"
+                           FontSize="14.5"
+                           HorizontalTextAlignment="Center"/>
+                </Border>
+
+                <!-- Average -->
+                <Border x:Name="AverageCard"
+                    Stroke="Gray"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 12"
+                    Padding="15">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnMealCardTapped"/>
+                    </Border.GestureRecognizers>
+
+                    <Label Text="Mixed/Average Meals"
+                           FontFamily="rotisb"
+                           CharacterSpacing="1"
+                           FontSize="14.5"
+                        HorizontalTextAlignment="Center"/> 
+                </Border>
+
+                <!-- Unhealthy -->
+                <Border x:Name="UnhealthyCard"
+                    Stroke="Gray"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 12"
+                    Padding="15">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnMealCardTapped"/>
+                    </Border.GestureRecognizers>
+
+                    <Label Text="Mostly Unhealthy Meals"
+                        FontFamily="rotisb"
+                        CharacterSpacing="1"
+                           FontSize="14.5"
+                           HorizontalTextAlignment="Center"/>
+                </Border>
+
+            </VerticalStackLayout>
+
+            <Button Text="SAVE"
+            Clicked="OnSaveClicked"
+        FontFamily="etna"
+                    FontSize="20"
+        CharacterSpacing="2"
+        CornerRadius="30"
+        HeightRequest="50"
+        BackgroundColor="#6aa5b9"
+        TextColor="White"/>
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WellifyApp.RecordPage"
+             BackgroundColor="#FDFCF8">
+
+    <ScrollView>
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Main Calendar Card -->
+        <Border Stroke="#E0E0E0"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 15"
+                Padding="10,10,10,20"
+                BackgroundColor="White"
+                VerticalOptions="Start">
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,5" Opacity="0.05" Radius="10" />
+            </Border.Shadow>
+
+            <VerticalStackLayout Spacing="10">
+                <!-- Navigation -->
+                <Grid ColumnDefinitions="Auto, *, Auto">
+                    <Button Text="◀" 
+                            Clicked="OnPrevMonthClicked" 
+                            BackgroundColor="Transparent" 
+                            TextColor="#2e748f" 
+                            FontSize="22" 
+                            FontAttributes="Bold"/>
+
+                    <Label x:Name="MonthYearLabel" 
+                           Grid.Column="1" 
+                           FontSize="22" 
+                           CharacterSpacing="1"
+                           FontFamily="etna" 
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Center" 
+                           TextColor="#333333"/>
+
+                    <Button Text="▶" 
+                            Grid.Column="2"
+                            Clicked="OnNextMonthClicked" 
+                            BackgroundColor="Transparent" 
+                            TextColor="#2e748f" 
+                            FontSize="22" 
+                            FontAttributes="Bold"/>
+                </Grid>
+
+                <BoxView HeightRequest="1" Color="#F0F0F0" Margin="0"/>
+                
+                <!-- Day Headers -->
+                <Grid ColumnDefinitions="*,*,*,*,*,*,*" Margin="0,5,0,0">
+                    <Label Text="M" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="0"/>
+                    <Label Text="T" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="1"/>
+                    <Label Text="W" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="2"/>
+                    <Label Text="T" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="3"/>
+                    <Label Text="F" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="4"/>
+                    <Label Text="S" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="5"/>
+                    <Label Text="S" FontFamily="etna" FontSize="18" HorizontalOptions="Center" TextColor="Black" Grid.Column="6"/>
+                </Grid>
+
+                <!-- Calendar Content -->
+                <CollectionView x:Name="CalendarCollection" 
+                                SelectionMode="None">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="7" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="2">
+
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnDateTapped" CommandParameter="{Binding .}" />
+                            </Grid.GestureRecognizers>
+
+
+                        <!-- YELLOW DOT -->
+                        <Border WidthRequest="8"
+                             HeightRequest="8"
+                             BackgroundColor="#fcbe03"
+                             StrokeShape="RoundRectangle 10"
+                             HorizontalOptions="Center"
+                             VerticalOptions="End"
+                             Margin="0,0,0,0.5"
+                             IsVisible="{Binding ShowPartialDot}" />
+                                
+                        <!-- RED DOT -->
+                        <Border WidthRequest="8"
+                            HeightRequest="8"
+                            BackgroundColor="#cc2525"
+                            StrokeShape="RoundRectangle 10"
+                            HorizontalOptions="Center"
+                            VerticalOptions="End"
+                            Margin="0,0,0,0.5"
+                            IsVisible="{Binding ShowMissingDot}" />
+
+                                    <Border HeightRequest="40" 
+                                    WidthRequest="40"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    StrokeShape="RoundRectangle 20"
+                                    StrokeThickness="2"
+                                    BackgroundColor="Transparent">
+                                    <Border.Triggers>
+                                        <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="True">
+                                            <!-- FILL THE CIRCLE HERE -->
+                                            <Setter Property="BackgroundColor" Value="#0cc0df" />
+                                            <Setter Property="Stroke" Value="#0cc0df" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="Border" Binding="{Binding IsSelected}" Value="False">
+                                            <Setter Property="BackgroundColor" Value="Transparent" />
+                                            <Setter Property="Stroke" Value="Transparent" />
+                                        </DataTrigger>
+                                    </Border.Triggers>
+
+                                        <Label Text="{Binding DayNumber}"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       TextColor="#4E4E4E"
+                                       FontFamily="rotisb"
+                                       FontSize="17"
+                                       IsVisible="{Binding IsNotShowing}">
+                                            <Label.Triggers>
+                                                <!-- Make text white when the circle is filled orange -->
+                                                <DataTrigger TargetType="Label" Binding="{Binding IsSelected}" Value="True">
+
+                                                    <Setter Property="TextColor" Value="White" />
+                                                </DataTrigger>
+                                                <!-- Keep Today bold and pink if NOT selected -->
+                                                <MultiTrigger TargetType="Label">
+                                                    <MultiTrigger.Conditions>
+                                                        <BindingCondition Binding="{Binding IsToday}" Value="True" />
+                                                        <BindingCondition Binding="{Binding IsSelected}" Value="False" />
+                                                    </MultiTrigger.Conditions>
+                                                    <Setter Property="FontFamily" Value="rotiseb" />
+                                                    <Setter Property="TextColor" Value="#af006b" />
+                                                </MultiTrigger>
+                                            </Label.Triggers>
+                                        </Label>
+                                    </Border>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                    <!-- Separator -->
+                    <BoxView HeightRequest="1" Color="#F0F0F0" Margin="0,8,0,10"/>
+
+                    <!-- Legend -->
+                    <HorizontalStackLayout Spacing="20"
+                       HorizontalOptions="Center">
+
+                        <!-- Red -->
+                        <HorizontalStackLayout Spacing="5" VerticalOptions="Center">
+                            <Border WidthRequest="8"
+                HeightRequest="8"
+                BackgroundColor="#cc2525"
+                StrokeShape="RoundRectangle 10"/>
+                            <Label Text="No data recorded"
+                                   FontFamily="rotisb"
+                                   CharacterSpacing="0.3"
+               FontSize="14"
+               TextColor="#555"
+               VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+
+                        <!-- Yellow -->
+                        <HorizontalStackLayout Spacing="5" VerticalOptions="Center">
+                            <Border WidthRequest="8"
+                HeightRequest="8"
+                BackgroundColor="#FFC107"
+                StrokeShape="RoundRectangle 10"/>
+                            <Label Text="Incomplete data"
+                                   CharacterSpacing="0.3"
+               FontSize="14"
+                                   FontFamily="rotisb"
+               TextColor="#555"
+               VerticalOptions="Center"/>
+                        </HorizontalStackLayout>
+
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+        </Border>
+        
+        <!-- FIREBASE DATA DISPLAY SECTION -->
+        <Border Stroke="#E0E0E0" StrokeShape="RoundRectangle 15" Padding="15" BackgroundColor="White">
+            <Grid>
+                <Label x:Name="NoDataLabel" Text="Select a date to view record" TextColor="Gray" HorizontalOptions="Center" />
+
+                <VerticalStackLayout x:Name="DetailsView" IsVisible="False" Spacing="8">
+                        <Label x:Name="SelectedDateDisplay" FontFamily="etna" CharacterSpacing="1" FontSize="18" TextColor="#af006b" HorizontalOptions="Center"/>
+                    <BoxView HeightRequest="1" Color="#F0F0F0" Margin="0"/>
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="5" Margin="0,5">
+                        <Label Text="Total Score:" FontFamily="etna" FontSize="22" CharacterSpacing="1"/>
+                        <Label x:Name="ScoreLabel" FontFamily="etna" TextColor="DarkGreen" CharacterSpacing="1" FontSize="20"/>
+                    </HorizontalStackLayout>
+
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" RowSpacing="12" ColumnSpacing="12">
+
+                                    <!-- SLEEP -->
+            <Border Grid.Row="0" Grid.Column="0"
+                Stroke="#F7CFD8"
+                StrokeShape="RoundRectangle 12"
+                BackgroundColor="White"
+                Padding="10">
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="🛏️" FontSize="24"/>
+                    <VerticalStackLayout Spacing="2">
+                        <Label Text="SLEEP" FontFamily="introrust" FontSize="14" CharacterSpacing="1"/>
+                        <Label x:Name="SleepLabel" FontSize="14" CharacterSpacing="1" FontFamily="rotisb" TextColor="DarkGreen"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Border>
+                        <!-- MOOD -->
+                            <Border Grid.Row="0" Grid.Column="1"
+                            Stroke="#fad47a"
+                            StrokeShape="RoundRectangle 12"
+                            BackgroundColor="White"
+                            Padding="10">
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label Text="😊" FontSize="24"/>
+                                    <VerticalStackLayout Spacing="2">
+                                        <Label Text="MOOD" FontFamily="introrust" FontSize="14" CharacterSpacing="1"/>
+                                        <Label x:Name="MoodLabel" FontSize="14" CharacterSpacing="1" FontFamily="rotisb" TextColor="DarkGreen"/>
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </Border>
+
+                            <!-- EXERCISE -->
+                        <Border Grid.Row="1" Grid.Column="0"
+                            Stroke="#ace8b4"
+                            StrokeShape="RoundRectangle 12"
+                            BackgroundColor="White"
+                            Padding="10">
+                            <HorizontalStackLayout Spacing="10">
+                                <Label Text="🏃" FontSize="24"/>
+                                <VerticalStackLayout Spacing="2">
+                                    <Label Text="EXERCISE" FontFamily="etna" FontSize="14"/>
+                                    <Label x:Name="ExerciseLabel" FontSize="14" CharacterSpacing="1" FontFamily="rotisb" TextColor="DarkGreen"/>
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Border>
+
+                            <!-- WATER -->
+                            <Border Grid.Row="1" Grid.Column="1"
+                                Stroke="#a2cef5"
+                                StrokeShape="RoundRectangle 12"
+                                BackgroundColor="White"
+                                Padding="10">
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label Text="💧" FontSize="24"/>
+                                    <VerticalStackLayout Spacing="2">
+                                        <Label Text="WATER" FontFamily="introrust" FontSize="14" CharacterSpacing="1"/>
+                                        <Label x:Name="WaterLabel" FontSize="14" CharacterSpacing="1" FontFamily="rotisb" TextColor="DarkGreen"/>
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </Border>
+
+                            <!-- MEAL (full width) -->
+                            <Border Grid.Row="2" Grid.ColumnSpan="2"
+                                Stroke="#e0c1f5"                                   
+                                StrokeShape="RoundRectangle 12"
+                                BackgroundColor="White"
+                                Padding="10">
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label Text="🍽️" FontSize="24"/>
+                                    <VerticalStackLayout Spacing="2">
+                                        <Label Text="MEAL" FontFamily="introrust" FontSize="14" CharacterSpacing="1"/>
+                                        <Label x:Name="MealLabel" FontSize="14" CharacterSpacing="1" FontFamily="rotisb" TextColor="DarkGreen"/>
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </Border>
+
+                        </Grid>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+
+    </VerticalStackLayout>
+        </ScrollView>
+</ContentPage>

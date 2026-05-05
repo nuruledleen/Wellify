@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WellifyApp.DailyPage"
+             Title="DailyPage">
+    <!-- DAILY ENTRY CONTENT -->
+    <ScrollView x:Name="HomeContent" Grid.Row="1">
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Date -->
+            <Frame CornerRadius="12" 
+                Padding="15,0" 
+                Margin="0,10" 
+                HorizontalOptions="Center" 
+                WidthRequest="313"
+                BorderColor="#2e748f"
+                BackgroundColor="White">
+
+                <DatePicker x:Name="RecordDatePicker"
+                    Format="dddd, d MMM yyyy"
+                    FontSize="22"
+                    HorizontalOptions="Fill"
+                    FontFamily="etna"
+                    CharacterSpacing="1"
+                    TextColor="#af006b"
+                    BackgroundColor="White"
+                    DateSelected="OnDateChanged"/>
+            </Frame>
+
+            <!-- Sleep card -->
+            <Frame CornerRadius="12">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
+                    <!-- ICON -->
+                    <Frame BackgroundColor="#F7CFD8"
+                       CornerRadius="12"
+                       Padding="10"
+                       HeightRequest="70"
+                       WidthRequest="70">
+
+                        <Label Text="🛌"
+                           FontSize="40"
+                           Padding="0,-20,0,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Frame>
+
+                    <!-- TEXT -->
+                    <VerticalStackLayout Grid.Column="1" Spacing="3" Padding="0,10,0,0">
+                        <Label Text="Sleep"
+                            FontSize="18"
+                            FontFamily="introrust"
+                            CharacterSpacing="1"/>
+
+                        <Label x:Name="SleepStatusLabel"
+                            Text="Not entered yet"
+                            FontSize="15.5"
+                            FontFamily="rotisb"
+                            CharacterSpacing="1"
+                            TextColor="Gray"/>
+                    </VerticalStackLayout>
+
+                    <Button Grid.Column="2"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Text="›"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        Padding="1.5,-10,0,0"
+                        CornerRadius="30"
+                        BackgroundColor="#2e748f"
+                        TextColor="white"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="GoSleep"
+                        Pressed="OnArrowPressed"
+                        Released="OnArrowReleased"/>
+                </Grid>
+            </Frame>
+
+            <!-- Mood card -->
+            <Frame CornerRadius="12">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
+                    <!-- ICON -->
+                    <Frame BackgroundColor="#fcf6bd"
+                       CornerRadius="12"
+                       Padding="10"
+                       HeightRequest="70"
+                       WidthRequest="70">
+
+                        <Label Text="😄"
+                           FontSize="40"
+                           Padding="0,-4,0,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Frame>
+
+                    <!-- TEXT -->
+                    <VerticalStackLayout Grid.Column="1" Spacing="3" Padding="0,10,0,0">
+                        <Label Text="Mood"
+                            FontSize="18"
+                            FontFamily="introrust"
+                            CharacterSpacing="1"/>
+
+                        <HorizontalStackLayout x:Name="MoodStarsLayout" Spacing="3">
+
+                            <Label Text="★" FontSize="18" TextColor="Gray"/>
+                            <Label Text="★" FontSize="18" TextColor="Gray"/>
+                            <Label Text="★" FontSize="18" TextColor="Gray"/>
+                            <Label Text="★" FontSize="18" TextColor="Gray"/>
+                            <Label Text="★" FontSize="18" TextColor="Gray"/>
+
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <Button Grid.Column="2"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Text="›"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        Padding="1.5,-10,0,0"
+                        CornerRadius="30"
+                        BackgroundColor="#2e748f"
+                        TextColor="white"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="GoMood"
+                        Pressed="OnArrowPressed"
+                        Released="OnArrowReleased"/>
+                </Grid>
+            </Frame>
+
+            <!-- Exercise card -->
+            <Frame CornerRadius="12">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
+                    <!-- ICON -->
+                    <Frame BackgroundColor="#DAF9DE"
+                       CornerRadius="12"
+                       Padding="10"
+                       HeightRequest="70"
+                       WidthRequest="70">
+
+                        <Label Text="🏃‍"
+                           FontSize="40"
+                           Padding="0,-4,0,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Frame>
+
+                    <!-- TEXT -->
+                    <VerticalStackLayout Grid.Column="1" Spacing="3" Padding="0,10,0,0">
+                        <Label Text="Exercise"
+                           FontSize="18"
+                           FontFamily="introrust"
+                           CharacterSpacing="1"/>
+
+                        <Label x:Name="ExerciseStatusLabel"
+                            Text="Not entered yet"
+                            FontSize="15.5"
+                            FontFamily="rotisb"
+                            CharacterSpacing="1"
+                            TextColor="Gray"/>
+                    </VerticalStackLayout>
+
+                    <Button Grid.Column="2"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Text="›"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        Padding="1.5,-10,0,0"
+                        CornerRadius="30"
+                        BackgroundColor="#2e748f"
+                        TextColor="white"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="GoExercise"
+                        Pressed="OnArrowPressed"
+                        Released="OnArrowReleased"/>
+                </Grid>
+            </Frame>
+
+            <!-- water intake card -->
+            <Frame CornerRadius="12">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
+                    <!-- ICON -->
+                    <Frame BackgroundColor="#bde0ff"
+                        CornerRadius="12"
+                        Padding="10"
+                        HeightRequest="70"
+                        WidthRequest="70">
+
+                        <Label Text="💦"
+                           FontSize="40"
+                           Padding="0,-4,0,0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                    </Frame>
+
+                    <!-- TEXT -->
+                    <VerticalStackLayout Grid.Column="1" Spacing="3" Padding="0,10,0,0">
+                        <Label Text="Water Intake"
+                            FontSize="18"
+                            FontFamily="introrust"
+                            CharacterSpacing="1"/>
+
+                        <Label x:Name="WaterStatusLabel"
+                            Text="Not entered yet"
+                            FontSize="15.5"
+                            FontFamily="rotisb"
+                            CharacterSpacing="1"
+                            TextColor="Gray"/>
+                    </VerticalStackLayout>
+
+                    <Button Grid.Column="2"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Text="›"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        Padding="1.5,-10,0,0"
+                        CornerRadius="30"
+                        BackgroundColor="#2e748f"
+                        TextColor="white"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="GoWater"
+                        Pressed="OnArrowPressed"
+                        Released="OnArrowReleased"/>
+                </Grid>
+            </Frame>
+
+            <!-- meal quality card -->
+            <Frame CornerRadius="12">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
+                    <!-- ICON -->
+                    <Frame BackgroundColor="#ecdff5"
+                        CornerRadius="12"
+                        Padding="10"
+                        HeightRequest="70"
+                        WidthRequest="70">
+
+                        <Label Text="🍽"
+                            FontSize="40"
+                            Padding="0,-4,0,0"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
+                    </Frame>
+
+                    <!-- TEXT -->
+                    <VerticalStackLayout Grid.Column="1" Spacing="3" Padding="0,10,0,0">
+                        <Label Text="Meal Quality"
+                            FontSize="18"
+                            FontFamily="introrust"
+                            CharacterSpacing="1"/>
+
+                        <Label Text="Not entered yet" x:Name="MealStatusLabel"
+                            FontSize="15.5"
+                            FontFamily="rotisb"
+                            CharacterSpacing="1"
+                            TextColor="Gray"/>
+                    </VerticalStackLayout>
+
+                    <Button Grid.Column="2"
+                        HeightRequest="30"
+                        WidthRequest="30"
+                        Text="›"
+                        FontSize="40"
+                        FontAttributes="Bold"
+                        Padding="1.5,-10,0,0"
+                        CornerRadius="30"
+                        BackgroundColor="#2e748f"
+                        TextColor="white"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="GoMeal"
+                        Pressed="OnArrowPressed"
+                        Released="OnArrowReleased"/>
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="WellifyApp" mvid="2bb36a1ac85246b4a78064a5dd0a3a6f">
+  <java-to-managed>
+    <entry java-name="crc64ea7328b7259382aa/MainActivity" managed-name="WellifyApp.MainActivity, WellifyApp" managed-type-token-id="33554455" />
+    <entry java-name="crc64ea7328b7259382aa/MainApplication" managed-name="WellifyApp.MainApplication, WellifyApp" managed-type-token-id="33554456" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64ea7328b7259382aa/MainActivity" managed-name="WellifyApp.MainActivity, WellifyApp" managed-type-token-id="33554455" />
+    <entry java-name="crc64ea7328b7259382aa/MainApplication" managed-name="WellifyApp.MainApplication, WellifyApp" managed-type-token-id="33554456" />
+  </managed-to-java>
+</api>

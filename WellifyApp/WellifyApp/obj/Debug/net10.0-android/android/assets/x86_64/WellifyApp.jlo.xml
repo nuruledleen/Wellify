@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc64ea7328b7259382aa" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="WellifyApp.MainActivity, WellifyApp">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc64ea7328b7259382aa" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="WellifyApp.MainApplication, WellifyApp" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="WellifyApp" module-name="WellifyApp.dll">
+    <type assembly-qualified-name="WellifyApp.MainActivity, WellifyApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="wellifyapp.MainActivity" java-key="crc64ea7328b7259382aa.MainActivity" managed-key="WellifyApp.MainActivity" partial-assembly-qualified-name="WellifyApp.MainActivity, WellifyApp" />
+    <type assembly-qualified-name="WellifyApp.MainApplication, WellifyApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="wellifyapp.MainApplication" java-key="crc64ea7328b7259382aa.MainApplication" managed-key="WellifyApp.MainApplication" partial-assembly-qualified-name="WellifyApp.MainApplication, WellifyApp" />
+  </acw-types>
+</api>

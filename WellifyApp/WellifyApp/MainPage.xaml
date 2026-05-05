@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WellifyApp.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*,Auto" BackgroundColor="#fffcf3">
+
+        <!-- TOP BAR -->
+        <Grid Grid.Row="0"
+          BackgroundColor="#2e748f"
+          Padding="18.5">
+
+            <Label x:Name="PageTitle"
+               Text="Home"
+               FontFamily="introrust"
+               CharacterSpacing="1.5"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+        </Grid>
+
+        <!-- HOME CONTENT (default view) -->
+        <ScrollView x:Name="HomeContent" Grid.Row="1">
+            <VerticalStackLayout Padding="35,30" Spacing="15">
+
+                <Label x:Name="GreetingLabel"
+                       Text="Welcome"
+                       FontFamily="etna"
+                       CharacterSpacing="1.5"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+
+                <Frame CornerRadius="30"
+                   Padding="20"
+                   BackgroundColor="#f4feff"
+                   BorderColor="#ccc"
+                       WidthRequest="340"
+                   Margin="0,16,0,0"
+                   HasShadow="True"
+                       HeightRequest="445">
+
+                    <VerticalStackLayout>
+
+                        <Label Text="Today's Score"
+                               FontFamily="etna"
+                                CharacterSpacing="1.5"
+                               Margin="0,15,0,0"
+                               TextColor="#af006b"
+                               HorizontalOptions="Center"
+                               FontSize="23"/>
+
+                        <Label x:Name="DateLabel"
+                           FontSize="18"
+                               FontFamily="rotisb"
+                               CharacterSpacing="1.5"
+                           FontAttributes="Bold"
+                           Padding="0,15"
+                           HorizontalOptions="Center"/>
+
+                        <Grid HeightRequest="250" WidthRequest="250"
+                             HorizontalOptions="Center" Margin="0,30,0,0">
+
+                            <!-- Circle -->
+                            <GraphicsView x:Name="ScoreCircle"
+                          HeightRequest="280"
+                          WidthRequest="260"/>
+
+                            <!-- Percentage -->
+                            <Label x:Name="ScoreLabel"
+                   Text="0%"
+                   FontSize="48"
+                                   CharacterSpacing="1"
+                                   FontFamily="etna"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+                        </Grid>
+
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- AI MESSAGE BOX -->
+                <Frame CornerRadius="30"
+       Padding="20"
+       BackgroundColor="#f4feff"
+       BorderColor="#ccc"
+       Margin="0,15,0,0"
+                       WidthRequest="340"
+       HasShadow="True">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Today's Message"
+               FontFamily="etna"
+                               CharacterSpacing="1.5"
+               TextColor="#af006b"
+               HorizontalOptions="Center"
+               FontSize="18"/>
+
+                        <Label x:Name="AiMessageLabel"
+                               
+               Text="Analyzing your data..."
+                               FontFamily="rotisb"
+                               CharacterSpacing="1"
+               FontSize="14.5"
+               HorizontalTextAlignment="Center"
+               LineHeight="1.2"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- OTHER PAGE CONTENT -->
+        <ContentView x:Name="OtherContent" Grid.Row="1" IsVisible="False"/>
+
+        <!-- FLOATING NAVBAR -->
+        <Frame Grid.Row="2"
+       CornerRadius="30"
+       BackgroundColor="#e2f4fe"
+       Padding="12,14,12,12"
+       Margin="20"
+       HasShadow="True">
+
+            <Grid ColumnDefinitions="*,*,*,*,*" ColumnSpacing="10">
+
+                <!-- HOME -->
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="2">
+                    <Image x:Name="HomeIcon" Source="home.svg" HeightRequest="28"/>
+                    <Label Text="Home" FontSize="13" FontFamily="rotisb" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0, 1, 0, 0"/>
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoHome"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+                <!-- RECORD -->
+                <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="2">
+                    <Image x:Name="RecordIcon" Source="record.svg" HeightRequest="28"/>
+                    <Label Text="Record" FontSize="13" FontFamily="rotisb" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0, 1, 0, 0"/>
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoRecord"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+                <!-- DAILY -->
+                <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center" Spacing="2">
+                    <Image x:Name="DailyIcon" Source="daily.svg" HeightRequest="28"/>
+                    <Label Text="Daily" FontSize="13" FontFamily="rotisb" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0, 1, 0, 0"/>
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoDaily"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+                <!-- SUMMARY -->
+                <VerticalStackLayout Grid.Column="3" HorizontalOptions="Center" Spacing="2">
+                    <Image x:Name="InsightsIcon" Source="insight.svg" HeightRequest="28"/>
+                    <Label Text="Summary" FontSize="13" FontFamily="rotisb" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0, 1, 0, 0"/>
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoInsights"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+                <!-- ABOUT -->
+                <VerticalStackLayout Grid.Column="4" HorizontalOptions="Center" Spacing="2">
+                    <Image x:Name="AboutIcon" Source="about.svg" HeightRequest="28"/>
+                    <Label Text="About" FontSize="13" FontFamily="rotisb" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0, 1, 0, 0"/>
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoAbout"/>
+                    </VerticalStackLayout.GestureRecognizers>
+                </VerticalStackLayout>
+
+            </Grid>
+        </Frame>
+
+    </Grid>
+
+</ContentPage>

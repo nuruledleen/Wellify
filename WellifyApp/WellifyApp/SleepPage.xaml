@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="WellifyApp.SleepPage" 
+             Title="SleepPage" 
+             Shell.NavBarIsVisible="False">
+    
+    <Grid RowDefinitions="Auto,*">
+        <Grid Grid.Row="0"
+          BackgroundColor="#2e748f"
+          Padding="7"
+          ColumnDefinitions="Auto,*,Auto">
+            
+            <!-- Back Arrow -->
+            <Label Grid.Column="0"
+               Text="‹"
+               FontSize="43"
+               FontAttributes="Bold"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Start"
+               Margin="15,0,0,0"
+               Padding="0,-9,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBackTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <!-- Title -->
+            <Label Grid.Column="1"
+                Text="Daily Entry"
+                Padding="-28,0,0,0"
+                FontFamily="introrust"
+                CharacterSpacing="1.5"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        </Grid>
+        
+        <!-- CONTENT AREA -->
+        <VerticalStackLayout Grid.Row="1"
+                             BackgroundColor="#fffcf3"
+                             Padding="50,20" Spacing="15">
+            
+            <Label x:Name="DateLabel"
+               FontSize="22"
+               FontFamily="etna"
+               CharacterSpacing="1"
+               Padding="0,20"
+               HorizontalOptions="Center"/>
+            
+            <Label Text="SLEEP"
+                FontSize="30"
+                FontAttributes="Bold"
+                FontFamily="introrust"
+                TextColor="#af006b"
+                HorizontalOptions="Center"
+                Margin="0,13,0,0"
+                VerticalOptions="Center"
+                CharacterSpacing="1.5"/>
+            
+            <Label Text="Did you get enough sleep?"
+                FontSize="17"
+                FontAttributes="Bold"
+                FontFamily="rotisb"
+                Padding="0,25,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                CharacterSpacing="1.5"/>
+            
+            <Label Text="🛌"
+                FontSize="120"
+                HorizontalOptions="Center"
+                Padding="0,-30,0,0"/>
+
+            <Label Text="Enter your sleep hours"
+                   FontFamily="etna"
+                   TextColor="#af006b"
+                   CharacterSpacing="1.3"
+                   FontSize="17"
+                   HorizontalOptions="Center"
+                   Margin="0,45,0,0"/>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10" Margin="0,8,0,45">
+                
+                <!-- Input Box -->
+    <Border BackgroundColor="#fff"
+            Stroke="gray"
+            StrokeThickness="1.5"
+            StrokeShape="RoundRectangle 20"
+            Padding="15,5"
+            WidthRequest="110"
+            HeightRequest="50">
+
+        <Entry x:Name="SleepEntry"
+               Placeholder=""
+               FontFamily="rotisb"
+               FontSize="18"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="Black"
+               Keyboard="Numeric"
+               BackgroundColor="Transparent"/>
+    </Border>
+
+    <!-- "Hours" Text -->
+    <Label Text="HOURS"
+           FontSize="17"
+           CharacterSpacing="1"
+           FontFamily="rotiseb"
+           VerticalOptions="Center"
+           TextColor="Black"/>
+</HorizontalStackLayout>
+            
+            <Button Text="SAVE"
+                Clicked="OnSaveClicked"
+                FontFamily="etna"
+                FontSize="20"
+                CharacterSpacing="2"
+                CornerRadius="30"
+                HeightRequest="50"
+                BackgroundColor="#6aa5b9"
+                TextColor="White"/>
+            
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

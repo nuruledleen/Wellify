@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WellifyApp.AboutPage"
+             Title="AboutPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="30,30">
+
+            <Image
+            Source="wlicon.png"
+            HeightRequest="120"
+            Aspect="AspectFit"
+            SemanticProperties.Description="Wellify Icon" />
+            <Label
+            Text="v1.0.0"
+                FontFamily="rotisb"
+            TextColor="#41b8d5"
+                HorizontalTextAlignment="Center"
+            FontSize="14"
+            CharacterSpacing="1"
+            Margin="0,-18,0,2"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="App version" />
+
+            <Label
+            Text="Welcome to Wellify, your personal&#10;wellness companion!&#10;&#10;By logging simple habits like sleep, mood, exercise, water intake and meals, Wellify turns your routine into an easy-to-understand wellness score.&#10;&#10;It’s a simple way to stay aware of your wellbeing and take small steps toward a healthier, happier lifestyle."
+            HorizontalTextAlignment="Center"
+                CharacterSpacing="1"
+                FontFamily="rotisb"
+                FontSize="15"
+            LineHeight="1.3"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Welcome to Wellify App UI" />
+
+            <BoxView HeightRequest="2" 
+            BackgroundColor="#d7d7d7" 
+            Margin="0,2.5,0,0"
+            HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="SUSTAINABILITY IMPACT"
+                TextColor="black"
+                FontSize="15"
+                FontFamily="introrust"
+                CharacterSpacing="1"
+                Margin="6,0,0,-5"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Developer name" />
+
+            <HorizontalStackLayout Spacing="6" Margin="6,2,0,-10">
+
+                <Label
+        Text="SDG 3: Good Health and Well-being"
+        TextColor="DarkGreen"
+        FontSize="14"
+        FontFamily="rotiseb"
+        CharacterSpacing="1"
+        VerticalOptions="Center"
+        SemanticProperties.HeadingLevel="Level2"
+        SemanticProperties.Description="Developed label" />
+
+            </HorizontalStackLayout>
+
+            <Label
+    Text="Wellify supports SDG 3: Good Health and Well-being by encouraging users to maintain healthy daily habits and improve their overall lifestyle."
+    HorizontalTextAlignment="Justify"
+    LineHeight="1.3"
+    TextColor="#2e748f"
+    FontSize="13.5"
+    FontFamily="rotisb"
+    CharacterSpacing="1"
+    Margin="6,0,0,2"
+    SemanticProperties.HeadingLevel="Level2"
+    SemanticProperties.Description="Developer name" />
+
+            <Label
+    Text=" ESG: Social"
+    TextColor="DarkGreen"
+    FontSize="14"
+    FontFamily="rotiseb"
+    CharacterSpacing="1"
+    VerticalOptions="Center"
+    SemanticProperties.HeadingLevel="Level2"
+    SemanticProperties.Description="Developed label" />
+
+
+
+            <Label
+Text="In line with ESG principles, the application focuses on the Social aspect by promoting better health awareness and personal wellbeing."
+HorizontalTextAlignment="Justify"
+LineHeight="1.3"
+TextColor="#2e748f"
+FontSize="13.5"
+FontFamily="rotisb"
+CharacterSpacing="1"
+Margin="6,-9,0,2"
+SemanticProperties.HeadingLevel="Level2"
+SemanticProperties.Description="Developer name" />
+
+            <BoxView HeightRequest="2" 
+                BackgroundColor="#d7d7d7" 
+                Margin="0,2.5,0,0"
+                HorizontalOptions="FillAndExpand" />
+
+            <HorizontalStackLayout Spacing="6" Margin="6,2,0,-10">
+
+                <Image
+                    Source="code.png"
+                    HeightRequest="18"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Text="Developed by:"
+                    TextColor="#41b8d5"
+                    FontSize="14"
+                    FontFamily="rotisb"
+                    CharacterSpacing="1"
+                    VerticalOptions="Center"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Developed label" />
+
+            </HorizontalStackLayout>
+
+            <Label
+                Text="NURUL EDLEEN FARHANA BINTI SYAHRIL ANNUAR"
+                TextColor="#2e748f"
+                FontSize="13.5"
+                FontFamily="rotisb"
+                CharacterSpacing="1"
+                Margin="6,0,0,2"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Developer name" />
+
+            <BoxView HeightRequest="2" 
+                BackgroundColor="#d7d7d7" 
+                Margin="0,0,0,0"
+                HorizontalOptions="FillAndExpand" />
+
+            <Label
+                Text="CONTACT US"
+                TextColor="black"
+                FontSize="15"
+                FontFamily="introrust"
+                CharacterSpacing="1"
+                Margin="6,0,0,2"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Developer name" />
+
+            <HorizontalStackLayout Spacing="6" Margin="10,-2,0,0">
+
+                <Image
+                    Source="call.png"
+                    HeightRequest="30"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Text=" +603-6700 6700"
+                    TextColor="#2e748f"
+                    FontSize="15"
+                    FontFamily="rotisb"
+                    CharacterSpacing="1"
+                    VerticalOptions="Center"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Developed label" />
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="6" Margin="10,-2,0,-10">
+
+                <Image
+                    Source="mail.png"
+                    HeightRequest="30"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Text=" support@wellify.com"
+                    TextColor="#2e748f"
+                    FontSize="15"
+                    FontFamily="rotisb"
+                    CharacterSpacing="1"
+                    VerticalOptions="Center"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Developed label" />
+
+            </HorizontalStackLayout>
+
+            <Label
+                Text="@ 2026 Wellify Care&#10;By using this app, you agree to our terms and privacy policy.&#10;We do not share your personal information without your consent."
+                TextColor="gray"
+                HorizontalTextAlignment="Center"
+                FontSize="10"
+                CharacterSpacing="1"
+                LineHeight="1.2"
+                Margin="0,27,0,2"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="App version" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

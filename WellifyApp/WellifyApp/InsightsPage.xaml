@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WellifyApp.InsightsPage"
+             BackgroundColor="#fffcf3">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Date Navigation -->
+            <Grid ColumnDefinitions="Auto,*,Auto" VerticalOptions="Center">
+                <Button Grid.Column="0" Text="◀" Clicked="OnPrevWeek" BackgroundColor="Transparent" TextColor="#2e748f" FontSize="22"/>
+                <!-- Removed "Loading..." to avoid confusion -->
+                <Label Grid.Column="1" x:Name="WeekRangeLabel" Text="" FontFamily="etna" FontSize="22" HorizontalOptions="Center" VerticalOptions="Center" CharacterSpacing="1"/>
+                <Button Grid.Column="2" Text="▶" Clicked="OnNextWeek" BackgroundColor="Transparent" TextColor="#2e748f" FontSize="22"/>
+            </Grid>
+
+            <!-- MESSAGE SHOWN WHEN DATA IS LOW -->
+            <Label x:Name="InsufficientDataLabel"
+                   IsVisible="False"
+                   Text="Keep tracking! You can see your weekly wellness summary once you have logged this week's data. 🌱"
+                   TextColor="#666"
+                   FontSize="16"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="20,50"
+                   LineHeight="1.2"/>
+
+            <!-- THE MAIN CONTENT (Wrapped in a Container) -->
+            <VerticalStackLayout x:Name="SummaryContainer" Spacing="20" IsVisible="False">
+
+                <Border BackgroundColor="#2e748f"
+        StrokeShape="RoundRectangle 30"
+        Padding="4"
+        HorizontalOptions="Center"
+        WidthRequest="280">
+
+                    <!-- Shadow -->
+                    <Border.Shadow>
+                        <Shadow Brush="#40000000"
+                Offset="0,2"
+                Radius="8"/>
+                    </Border.Shadow>
+
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="5">
+
+                        <!-- Chart Button -->
+                        <Button Text="Chart"
+                x:Name="ChartBtn"
+                                FontFamily="etna"
+                                FontSize="18"
+                                CharacterSpacing="1"
+                BackgroundColor="White"
+                TextColor="#2e748f"
+                FontAttributes="Bold"
+                CornerRadius="25"
+                Padding="12,6"
+                Clicked="OnToggleTapped"/>
+
+                        <!-- Table Button -->
+                        <Button Text="Table"
+                x:Name="TableBtn"
+                                FontFamily="etna"
+FontSize="18"
+CharacterSpacing="1"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="25"
+                Padding="12,6"
+                Clicked="OnToggleTapped"/>
+
+                    </Grid>
+                </Border>
+
+                <Grid>
+                    <Frame x:Name="ChartView"
+                        HeightRequest="355"
+                        BorderColor="#af006b"
+                        BackgroundColor="white"
+                        CornerRadius="15"
+                        Padding="10"
+                        IsVisible="True">
+                        <GraphicsView x:Name="WeeklyChart"
+                        HeightRequest="320"
+                        HorizontalOptions="Fill" />
+                    </Frame>
+
+                    <Frame x:Name="TableView"
+                        HeightRequest="355"
+                        BorderColor="#af006b"
+                        BackgroundColor="White"
+                        CornerRadius="15"
+                        Padding="0"
+                        IsVisible="False"
+                        HasShadow="True">
+                        <Grid RowDefinitions="Auto,*">
+                            <Grid Grid.Row="0" ColumnDefinitions="*,*" BackgroundColor="#af006b" Padding="10">
+                                <Label Grid.Column="0" Text="Day" TextColor="White" HorizontalOptions="Center" FontFamily="etna" FontSize="17" CharacterSpacing="1"/>
+                                <Label Grid.Column="1" Text="Score" TextColor="White" HorizontalOptions="Center" FontFamily="etna" FontSize="17" CharacterSpacing="1"/>
+                            </Grid>
+                            <CollectionView Grid.Row="1" x:Name="RecordsCollectionView">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid ColumnDefinitions="*,*" Padding="12.35">
+                                            <Label Grid.Column="0" Text="{Binding DateDisplay}" HorizontalOptions="Center" VerticalOptions="Center" FontFamily="rotisb" CharacterSpacing="1" FontSize="15"/>
+                                            <Label Grid.Column="1" Text="{Binding TotalScore, StringFormat='{0}%'}" FontFamily="rotisb" CharacterSpacing="1" HorizontalOptions="Center" VerticalOptions="Center" FontSize="15"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                        </Grid>
+                    </Frame>
+                </Grid>
+
+                <Label Text="Weekly Wellness Summary" Padding="0,15,0,0" TextColor="#2e748f" FontFamily="etna" FontSize="22.5" HorizontalOptions="Center" CharacterSpacing="1.3"/>
+
+                <!-- Stats Cards -->
+                <Grid ColumnDefinitions="*,*" ColumnSpacing="15">
+                    <Frame Grid.Column="0" CornerRadius="20" BorderColor="#ccc" Padding="15">
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Label Text="Average Score" TextColor="#af006b" FontFamily="etna" FontSize="15.5" CharacterSpacing="1" HorizontalOptions="Center"/>
+                            <Label x:Name="AverageScoreLabel" Text="0%" FontSize="33" FontFamily="etna" HorizontalOptions="Center" Padding="0,3,0,-10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame Grid.Column="1" CornerRadius="20" BorderColor="#ccc" Padding="15">
+                        <VerticalStackLayout HorizontalOptions="Center">
+                            <Label Text="Best Day" TextColor="#af006b" FontFamily="etna" FontSize="15.5" CharacterSpacing="1" HorizontalOptions="Center"/>
+                            <Label x:Name="BestDayLabel" Text="--" FontSize="20" FontFamily="etna" CharacterSpacing="1" HorizontalOptions="Center"/>
+                            <Label x:Name="BestDateLabel" Text="--" FontSize="15" FontFamily="etna" CharacterSpacing="1" HorizontalOptions="Center"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- Habit Overview Card -->
+                <Frame CornerRadius="20" BorderColor="#ccc" Padding="35,20" HasShadow="True">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="Habit Overview" TextColor="#af006b" FontFamily="etna" FontSize="18" CharacterSpacing="1" HorizontalOptions="Center" Margin="0,0,0,6"/>
+
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Sleep" CharacterSpacing="1" FontFamily="etna" FontSize="15"/>
+                                    <Span x:Name="SleepDataSpan" Text="Calculating..." FontFamily="rotisb" FontSize="15"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Exercise" CharacterSpacing="1" FontFamily="etna" FontSize="15" />
+                                    <Span x:Name="ExerciseDataSpan" Text="Calculating..." FontFamily="rotisb" FontSize="15" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Water Intake" CharacterSpacing="1" FontFamily="etna" FontSize="15" />
+                                    <Span x:Name="WaterDataSpan" Text="Calculating..." FontFamily="rotisb" FontSize="15"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Meal Quality" CharacterSpacing="1" FontFamily="etna" FontSize="15" />
+                                    <Span x:Name="MealDataSpan" Text="Calculating..." FontFamily="rotisb" FontSize="15"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

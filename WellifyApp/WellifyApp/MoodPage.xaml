@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="WellifyApp.MoodPage" 
+             Title="MoodPage" 
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*">
+        <Grid Grid.Row="0"
+      BackgroundColor="#2e748f"
+      Padding="7"
+      ColumnDefinitions="Auto,*,Auto">
+
+            <!-- 🔙 Back Arrow -->
+            <Label Grid.Column="0"
+           Text="‹"
+           FontSize="43"
+           FontAttributes="Bold"
+           TextColor="White"
+           VerticalOptions="Center"
+           HorizontalOptions="Start"
+           Margin="15,0,0,0"
+            Padding="0,-9,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBackTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <!-- 🏷️ Title -->
+            <Label Grid.Column="1"
+           Text="Daily Entry"
+            Padding="-28,0,0,0"
+            FontFamily="introrust"
+            CharacterSpacing="1.5"
+            FontSize="20"
+            FontAttributes="Bold"
+            TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+        </Grid>
+        <!-- CONTENT AREA -->
+        <VerticalStackLayout Grid.Row="1"
+                             BackgroundColor="#fffcf3"
+                             Padding="50,20" Spacing="15">
+
+            <Label x:Name="DateLabel"
+               FontSize="22"
+                   FontFamily="etna"
+               CharacterSpacing="1"
+               Padding="0,20"
+               HorizontalOptions="Center"/>
+
+            <Label Text="MOOD"
+                FontSize="30"
+                FontAttributes="Bold"
+                   FontFamily="introrust"
+                TextColor="#af006b"
+                HorizontalOptions="Center"
+                Margin="0,13,0,0"
+                VerticalOptions="Center"
+                CharacterSpacing="1.5"/>
+
+            <Label Text="How are you feeling?"
+                FontSize="17"
+                FontAttributes="Bold"
+                   FontFamily="rotisb"
+                   Padding="0,25,0,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                CharacterSpacing="1.5"/>
+
+            <Label Text="😄"
+                   FontSize="120"
+                   HorizontalOptions="Center"
+                   Padding="0,0,0,-10"/>
+
+            <HorizontalStackLayout x:Name="StarsLayout" HorizontalOptions="Center" Spacing="10" Margin="0,30">
+                <Label Text="★" x:Name="star1" FontSize="50" TextColor="Gray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnStarTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" x:Name="star2" FontSize="50" TextColor="Gray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnStarTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" x:Name="star3" FontSize="50" TextColor="Gray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnStarTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" x:Name="star4" FontSize="50" TextColor="Gray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnStarTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text="★" x:Name="star5" FontSize="50" TextColor="Gray">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnStarTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+
+            <Button Text="SAVE"
+            Clicked="OnSaveClicked"
+    FontFamily="etna"
+                FontSize="20"
+    CharacterSpacing="2"
+        CornerRadius="30"
+        HeightRequest="50"
+        BackgroundColor="#6aa5b9"
+        TextColor="White"/>
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>
