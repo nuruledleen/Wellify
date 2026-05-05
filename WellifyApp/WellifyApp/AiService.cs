@@ -4,7 +4,7 @@ using System.Text.Json;
 public class AiService
 {
     // API key might be disabled if OpenAI thinks it has been leaked
-    private const string ApiKey = "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";
+    private const string ApiKey = "API_KEY";
     private const string ApiUrl = "https://api.openai.com/v1/responses";
 
     private static readonly HttpClient client = new HttpClient();
