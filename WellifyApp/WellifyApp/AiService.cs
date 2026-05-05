@@ -3,7 +3,8 @@ using System.Text.Json;
 
 public class AiService
 {
-    private const string ApiKey = "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";
+    // API key might be disabled if OpenAI thinks it has been leaked
+    private const string ApiKey = "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";
     private const string ApiUrl = "https://api.openai.com/v1/responses";
 
     private static readonly HttpClient client = new HttpClient();
